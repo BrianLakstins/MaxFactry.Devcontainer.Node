@@ -1,0 +1,17 @@
+version: '3'
+services:
+  devcontainer-node:
+    image: node:lts-buster #lts for debian 10 (latest as of 7/29/2022)
+    container_name: devcontainer-node
+    volumes:
+      # Update this to wherever you want VS Code to mount the folder of your project
+      - workspace:/workspace:cached
+    environment:
+      - NUXT_HOST=0
+    working_dir: /workspace
+    command: /bin/sh -c "while sleep 1000; do :; done"
+    ports:
+      - 3000:3000
+
+volumes:
+  workspace:
