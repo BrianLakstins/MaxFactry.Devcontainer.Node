@@ -22,7 +22,13 @@
 			"extensions": [
 				"Vue.volar",
         "CodeCoaching.quasar-docs",
-        "abdelaziz18003.quasar-snippets"
+        "abdelaziz18003.quasar-snippets",
+        "wayou.vscode-todo-highlight",
+        "EditorConfig.EditorConfig",
+        "dbaeumer.vscode-eslint",
+        "eamodio.gitlens",
+        "esbenp.prettier-vscode",
+        "rvest.vs-code-prettier-eslint"  
 			]
 		}
 	},
